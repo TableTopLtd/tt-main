@@ -1,0 +1,9 @@
+kumuluzee:
+  name: tt-main
+  env:
+    name: dev
+  version: 1.0.0
+  server:
+    base-url: http://localhost:8090
+    http:
+      port: 8090
