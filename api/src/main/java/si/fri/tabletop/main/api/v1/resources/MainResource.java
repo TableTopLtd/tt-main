@@ -11,7 +11,7 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
 @ApplicationScoped
-@Path("/info")
+@Path("/demo")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class MainResource {
@@ -20,32 +20,45 @@ public class MainResource {
     private UriInfo uriInfo;
 
     @GET
+    @Path("/info")
     public Response getPlaces() {
         JSONObject json = new JSONObject();
 
         JSONArray clani = new JSONArray();
-        // TODO
         clani.put("ta6939");
+        clani.put("dgXXXX"); // TODO
+        clani.put("naXXXX"); // TODO
 
         JSONArray mikrostoritve = new JSONArray();
-        // TODO
-        mikrostoritve.put("http://35.189.96.119:8081/v1/orders");
+        // TODO: spremenit porte
+        mikrostoritve.put("http://169.51.8.66:8081/v1/places");
+        mikrostoritve.put("http://169.51.8.66:8081/v1/menus");
+        mikrostoritve.put("http://169.51.8.66:8081/v1/orders");
+        mikrostoritve.put("http://169.51.8.66:8081/v1/customers");
 
         JSONArray github = new JSONArray();
-        // TODO
-        github.put("https://github.com/jmezna/rso-customers");
+        github.put("https://github.com/TableTopLtd/tt-places");
+        github.put("https://github.com/TableTopLtd/tt-menus");
+        github.put("https://github.com/TableTopLtd/tt-orders");
+        github.put("https://github.com/TableTopLtd/tt-customers");
+        github.put("https://github.com/TableTopLtd/tt-main");
 
         JSONArray travis = new JSONArray();
-        // TODO
-        travis.put("https://travis-ci.org/jmezna/rso-customers");
+        travis.put("https://travis-ci.org/TableTopLtd/tt-places/");
+        travis.put("https://travis-ci.org/TableTopLtd/tt-menus/");
+        travis.put("https://travis-ci.org/TableTopLtd/tt-orders/");
+        travis.put("https://travis-ci.org/TableTopLtd/tt-customers/");
+        travis.put("https://travis-ci.org/TableTopLtd/tt-main/");
 
         JSONArray dockerhub = new JSONArray();
-        // TODO
-        dockerhub.put("https://hub.docker.com/r/jmezna/rso-customers");
+        dockerhub.put("https://hub.docker.com/r/tabletopltd/tt-places/");
+        dockerhub.put("https://hub.docker.com/r/tabletopltd/tt-menus/");
+        dockerhub.put("https://hub.docker.com/r/tabletopltd/tt-orders/");
+        dockerhub.put("https://hub.docker.com/r/tabletopltd/tt-customers/");
+        dockerhub.put("https://hub.docker.com/r/tabletopltd/tt-main/");
 
         json.put("clani", clani);
-        // TODO
-        json.put("opis_projekta", "Nas projekt implementira aplikacijo za oddajo nepremicnin.");
+        json.put("opis_projekta", "TableTop - Nas projekt implementira aplikacijo za rezervacijo miz in naročilo hrane v restavracijah.");
         json.put("mikrostoritve", mikrostoritve);
         json.put("github", github);
         json.put("travis", travis);

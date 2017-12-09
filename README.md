@@ -15,7 +15,7 @@
 
 To test the service you should go to
 ```
-http://localhost:8090/v1/info
+http://localhost:8090/v1/demo/info
 ```
 To see the info list.
 
