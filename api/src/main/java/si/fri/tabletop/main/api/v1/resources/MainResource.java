@@ -27,7 +27,7 @@ public class MainResource {
         JSONArray clani = new JSONArray();
         clani.put("ta6939");
         clani.put("dgXXXX"); // TODO
-        clani.put("naXXXX"); // TODO
+        clani.put("na5478");
 
         JSONArray mikrostoritve = new JSONArray();
         // TODO: spremenit porte
