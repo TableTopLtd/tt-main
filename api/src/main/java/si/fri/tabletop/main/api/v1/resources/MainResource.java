@@ -26,36 +26,38 @@ public class MainResource {
 
         JSONArray clani = new JSONArray();
         clani.put("ta6939");
-        clani.put("dgXXXX"); // TODO
+        clani.put("dg5121");
         clani.put("na5478");
 
         JSONArray mikrostoritve = new JSONArray();
         // TODO: spremenit porte
-        mikrostoritve.put("http://169.51.8.66:8081/v1/places");
-        mikrostoritve.put("http://169.51.8.66:8081/v1/menus");
-        mikrostoritve.put("http://169.51.8.66:8081/v1/orders");
-        mikrostoritve.put("http://169.51.8.66:8081/v1/customers");
+        mikrostoritve.put("http://169.51.8.66:30110/v1/places");
+        mikrostoritve.put("http://169.51.8.66:306111/v1/menus");
+        mikrostoritve.put("http://169.51.8.66:31984/v1/orders");
+        //mikrostoritve.put("http://169.51.8.66:8081/v1/customers");
 
         JSONArray github = new JSONArray();
+        github.put("https://github.com/TableTopLtd/tt-main");
         github.put("https://github.com/TableTopLtd/tt-places");
         github.put("https://github.com/TableTopLtd/tt-menus");
         github.put("https://github.com/TableTopLtd/tt-orders");
         github.put("https://github.com/TableTopLtd/tt-customers");
-        github.put("https://github.com/TableTopLtd/tt-main");
 
         JSONArray travis = new JSONArray();
+        travis.put("https://travis-ci.org/TableTopLtd/tt-main/");
         travis.put("https://travis-ci.org/TableTopLtd/tt-places/");
         travis.put("https://travis-ci.org/TableTopLtd/tt-menus/");
         travis.put("https://travis-ci.org/TableTopLtd/tt-orders/");
         travis.put("https://travis-ci.org/TableTopLtd/tt-customers/");
-        travis.put("https://travis-ci.org/TableTopLtd/tt-main/");
+
 
         JSONArray dockerhub = new JSONArray();
+        dockerhub.put("https://hub.docker.com/r/tabletopltd/tt-main/");
         dockerhub.put("https://hub.docker.com/r/tabletopltd/tt-places/");
         dockerhub.put("https://hub.docker.com/r/tabletopltd/tt-menus/");
         dockerhub.put("https://hub.docker.com/r/tabletopltd/tt-orders/");
         dockerhub.put("https://hub.docker.com/r/tabletopltd/tt-customers/");
-        dockerhub.put("https://hub.docker.com/r/tabletopltd/tt-main/");
+
 
         json.put("clani", clani);
         json.put("opis_projekta", "TableTop - Nas projekt implementira aplikacijo za rezervacijo miz in naročilo hrane v restavracijah.");
