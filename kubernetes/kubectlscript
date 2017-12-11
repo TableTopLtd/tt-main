@@ -1,0 +1,9 @@
+kubectl delete deploy etcd-deployment
+kubectl delete deploy grafana
+kubectl delete deploy main-deployment
+
+kubectl create -f etcd.yaml
+kubectl create -f grafana-deployment.yaml
+kubectl create -f main-deployment.yaml
+
+kubectl proxy
