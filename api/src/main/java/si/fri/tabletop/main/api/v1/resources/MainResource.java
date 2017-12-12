@@ -32,9 +32,9 @@ public class MainResource {
         JSONArray mikrostoritve = new JSONArray();
         // TODO: spremenit porte
         mikrostoritve.put("http://169.51.8.66:30110/v1/places");
-        mikrostoritve.put("http://169.51.8.66:306111/v1/menus");
+        mikrostoritve.put("http://169.51.8.66:30611/v1/menus");
         mikrostoritve.put("http://169.51.8.66:31984/v1/orders");
-        //mikrostoritve.put("http://169.51.8.66:8081/v1/customers");
+        mikrostoritve.put("http://169.51.8.66:32338/v1/customers");
 
         JSONArray github = new JSONArray();
         github.put("https://github.com/TableTopLtd/tt-main");
