@@ -32,7 +32,7 @@ public class MainResource {
         JSONArray mikrostoritve = new JSONArray();
         // TODO: spremenit porte
         mikrostoritve.put("http://169.51.8.66:30110/v1/places");
-        mikrostoritve.put("http://169.51.8.66:30611/v1/menus");
+        mikrostoritve.put("http://169.51.8.66:31597/v1/menus");
         mikrostoritve.put("http://169.51.8.66:31984/v1/orders");
         mikrostoritve.put("http://169.51.8.66:32338/v1/customers");
 
