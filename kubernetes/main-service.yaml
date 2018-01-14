@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: main
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
   - port: 8090
     protocol: TCP
